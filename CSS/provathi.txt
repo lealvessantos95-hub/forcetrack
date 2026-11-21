@@ -1,0 +1,7 @@
+2- qual a melhor forma de organização de um sistema. explique cada um deles e aponte a influencia do pensamento deles no pensador linus trovalds explique apresentando fontes 
+
+3-o que é swap e porque este fenomeno da organização faz acontecer thrashing? apresente fatos cientificos 
+
+4-voce decidiu limpar seu computador e ao abri-lo verificou que as duas memorias não são iguais, explique a relação entre swap thrashing, memorias iguais e dual shanel  
+
+5-qual a sua opinião sobre o futuro dos sistemas operacionais em base a sua resposta em artigos cientificos citando-os 

@@ -1,0 +1,497 @@
+/* =========================================
+   FORCETRACK - CATÁLOGO DE MÁQUINAS
+========================================= */
+
+.maquinas-main {
+    background:
+        linear-gradient(
+            180deg,
+            #f5f6f2 0%,
+            #ffffff 55%,
+            #eef1ec 100%
+        );
+
+    color: #151816;
+
+    min-height: 100vh;
+}
+
+
+/* HERO */
+
+.maquinas-hero {
+    max-width: 950px;
+
+    padding:
+        45px 0
+        42px;
+}
+
+.maquinas-kicker {
+    color: #34683e;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+.maquinas-hero h1 {
+    margin-top: 18px;
+
+    font-size: clamp(
+        48px,
+        6vw,
+        86px
+    );
+
+    line-height: .98;
+
+    letter-spacing: -4px;
+
+    font-weight: 700;
+}
+
+.maquinas-hero p {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: #697069;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* FILTROS */
+
+.filtro-maquinas {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    padding-bottom: 28px;
+
+    border-bottom:
+        1px solid #dfe3dd;
+}
+
+.filtro-btn {
+    border: 1px solid #d9ddd8;
+
+    background: transparent;
+
+    color: #555c56;
+
+    padding: 11px 16px;
+
+    border-radius: 40px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: .2s ease;
+}
+
+.filtro-btn span {
+    margin-left: 8px;
+
+    color: #989e99;
+}
+
+.filtro-btn:hover {
+    border-color: #235f36;
+
+    color: #235f36;
+}
+
+.filtro-btn.active {
+    background: #123b23;
+
+    border-color: #123b23;
+
+    color: white;
+}
+
+
+/* CATÁLOGO */
+
+.catalogo-maquinas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    margin-top: 32px;
+}
+
+
+/* CARD */
+
+.trator-card {
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: white;
+
+    border:
+        1px solid #e3e6e1;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+    position: relative;
+}
+
+.trator-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(26, 37, 29, .11);
+}
+
+.trator-card.destaque {
+    border-color:
+        rgba(39, 98, 55, .4);
+}
+
+
+/* TOPO */
+
+.trator-topo {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding:
+        20px 22px
+        0;
+}
+
+.trator-marca {
+    color: #6d756e;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+}
+
+.porte-tag {
+    border:
+        1px solid #dce1db;
+
+    color: #697069;
+
+    padding: 6px 9px;
+
+    border-radius: 3px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.1px;
+
+    font-weight: 800;
+}
+
+.porte-tag.premium {
+    color: #1b5930;
+
+    border-color:
+        #9fc9aa;
+
+    background:
+        #eff8f1;
+}
+
+
+/* IMAGEM */
+
+.trator-imagem {
+    height: 315px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.trator-imagem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition:
+        transform .4s ease;
+}
+
+.trator-card:hover
+.trator-imagem img {
+    transform: scale(1.035);
+}
+
+
+/* INFORMAÇÕES */
+
+.trator-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding:
+        10px 24px
+        24px;
+}
+
+.trator-info h2 {
+    font-size: 31px;
+
+    letter-spacing: -1px;
+}
+
+.trator-descricao {
+    min-height: 47px;
+
+    margin-top: 10px;
+
+    color: #777e78;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* ESPECIFICAÇÕES */
+
+.trator-specs {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1px;
+
+    margin:
+        23px 0;
+
+    background:
+        #e3e7e2;
+
+    border-top:
+        1px solid #e3e7e2;
+
+    border-bottom:
+        1px solid #e3e7e2;
+}
+
+.trator-specs div {
+    background: white;
+
+    padding:
+        15px 10px;
+}
+
+.trator-specs strong {
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.trator-specs span {
+    margin-left: 3px;
+
+    color: #697069;
+
+    font-size: 11px;
+}
+
+.trator-specs small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #9a9f9b;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* BOTÃO */
+
+.selecionar-trator {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding:
+        15px 17px;
+
+    border: none;
+
+    background: #161a17;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    font-size: 12px;
+
+    transition: .2s ease;
+
+    text-decoration: none;
+}
+
+.selecionar-trator svg {
+    width: 17px;
+
+    text-decoration: none;
+}
+
+.selecionar-trator:hover {
+    background: #174c2a;
+
+    text-decoration: none;
+}
+
+
+/* MÁQUINA SELECIONADA */
+
+.maquina-selecionada {
+    display: none;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-top: 30px;
+
+    padding:
+        27px 30px;
+
+    background: #0f1711;
+
+    color: white;
+
+    border-radius: 5px;
+}
+
+.maquina-selecionada.ativo {
+    display: flex;
+}
+
+.maquina-selecionada span {
+    display: block;
+
+    color: #76957e;
+
+    font-size: 9px;
+
+    letter-spacing: 1.7px;
+
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+.maquina-selecionada strong {
+    font-size: 22px;
+}
+
+.maquina-selecionada button {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding:
+        13px 18px;
+
+    background: white;
+
+    color: #111;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+.maquina-selecionada button:hover {
+    background: #dceadf;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1050px) {
+
+    .catalogo-maquinas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .maquinas-hero h1 {
+        font-size: 45px;
+
+        letter-spacing: -2px;
+    }
+
+    .trator-imagem {
+        height: 240px;
+    }
+
+    .trator-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .maquina-selecionada {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
